@@ -1,0 +1,57 @@
+body{
+    margin:0;
+}
+header{
+    display:flex;
+    background-color:midnightblue;
+    justify-content: space-between;
+}
+
+.err_msg {
+    color: red;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.success_msg {
+    color: blue;
+}
+
+#title {
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight:bold;
+    color:white;
+}
+
+.title {
+    margin: 0;
+}
+
+#logout {
+    padding-top: 11px;
+    margin-right: 10px;
+}
+
+.logout {
+    text-decoration: none;
+    color: white;
+}
+
+table, td, th {
+    text-align: center;
+    border: solid black 1px;
+}
+
+table {
+    width: 1000px;
+}
+
+.private {
+    background-color: silver;
+}
+
+section {
+    margin-bottom: 20px;
+    /*border-top: solid 1px;*/
+}
