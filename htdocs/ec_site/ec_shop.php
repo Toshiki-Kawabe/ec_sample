@@ -1,4 +1,5 @@
 <?php
+//sample
 session_start();
 require_once '../../include/ec/conf/ec_const.php';
 require_once '../../include/ec/model/ec_shop_function.php';
