@@ -22,7 +22,7 @@ if ($_SESSION['user_id'] === 'admin') {
             change_amount_check('数量', $amount);
             if (count($_SESSION['error']) === 0) {
                 $date = get_now_date();
-                if (update_cart_table($link, $goods_id, $amount, $date) !== TRUE) {
+                if (update_cart_table($link, $goods_id, $amount, $date, $user_id) !== TRUE) {
                      $_SESSION['error'][] = 'UPDATE失敗';
                 } else {
                     $comment = '数量の変更が完了しました';
