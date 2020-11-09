@@ -91,8 +91,8 @@ function get_now_date() {
 
 function update_cart_table($link, $goods_id, $amount, $date, $user_id) {
     $sql = 'UPDATE ec_cart_table
-            SET update_at = \'' . $date . '\' ,amount = \'' . $amount . '\'    
-            WHERE goods_id = \'' . $goods_id . '\'　AND user_id = \'' . $user_id . '\''; 
+            SET update_at = \'' . $date . '\' , amount = ' . $amount . ' 
+            WHERE goods_id = ' . $goods_id . ' AND user_id = ' . $user_id ;
     return insert_db($link, $sql);
 }
 
